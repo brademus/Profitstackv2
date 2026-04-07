@@ -1,0 +1,52 @@
+export const theme = {
+  colors: {
+    bg: '#0A0A0F',
+    bgCard: '#141419',
+    bgCardHover: '#1A1A22',
+    bgInput: '#1E1E28',
+    bgModal: '#111116',
+    primary: '#6366F1',
+    primaryLight: '#818CF8',
+    primaryDark: '#4F46E5',
+    primaryMuted: 'rgba(99, 102, 241, 0.15)',
+    accent: '#10B981',
+    accentMuted: 'rgba(16, 185, 129, 0.15)',
+    income: '#10B981',
+    incomeMuted: 'rgba(16, 185, 129, 0.12)',
+    expense: '#EF4444',
+    expenseMuted: 'rgba(239, 68, 68, 0.12)',
+    warning: '#F59E0B',
+    warningMuted: 'rgba(245, 158, 11, 0.12)',
+    scale: '#10B981',
+    maintain: '#F59E0B',
+    kill: '#EF4444',
+    textPrimary: '#F1F1F6',
+    textSecondary: '#8B8B9E',
+    textMuted: '#5C5C6F',
+    textInverse: '#0A0A0F',
+    border: '#2A2A35',
+    borderLight: '#3A3A48',
+    borderFocus: '#6366F1',
+    white: '#FFFFFF',
+    black: '#000000',
+    overlay: 'rgba(0, 0, 0, 0.6)',
+  },
+  spacing: {
+    xs: 4, sm: 8, md: 12, lg: 16, xl: 20, xxl: 24, xxxl: 32, xxxxl: 40,
+  },
+  radius: {
+    sm: 8, md: 12, lg: 16, xl: 20, round: 999,
+  },
+  fontSize: {
+    xs: 11, sm: 13, md: 15, lg: 17, xl: 20, xxl: 24, xxxl: 32, hero: 40,
+  },
+  fontWeight: {
+    regular: '400' as const,
+    medium: '500' as const,
+    semibold: '600' as const,
+    bold: '700' as const,
+    heavy: '800' as const,
+  },
+} as const;
+
+export type Theme = typeof theme;
