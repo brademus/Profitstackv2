@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VentureStack — P&L Dashboard for Multi-Hustlers</title>
+  <meta name="description" content="See which of your ventures actually makes money. P&L per venture, true $/hour, quarterly tax estimates, and AI-powered Kill/Scale recommendations.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+      background: #0A0A0F;
+      color: #F1F1F6;
+      min-height: 100vh;
+    }
+    .hero {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+    .logo { font-size: 64px; margin-bottom: 20px; }
+    h1 {
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .tagline {
+      font-size: 20px;
+      color: #8B8B9E;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    .cta {
+      display: inline-block;
+      background: #6366F1;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: transform 0.15s;
+    }
+    .cta:hover { transform: scale(1.03); }
+    .features {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .feature {
+      display: flex;
+      gap: 16px;
+      padding: 24px 0;
+      border-bottom: 1px solid #2A2A35;
+    }
+    .feature-emoji { font-size: 32px; flex-shrink: 0; width: 44px; }
+    .feature h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .feature p {
+      font-size: 15px;
+      color: #8B8B9E;
+      line-height: 1.5;
+    }
+    .pricing {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      text-align: center;
+    }
+    .pricing h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    .pricing-cards {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    .pricing-card {
+      background: #141419;
+      border: 2px solid #2A2A35;
+      border-radius: 16px;
+      padding: 32px 24px;
+      flex: 1;
+      max-width: 260px;
+    }
+    .pricing-card.pro {
+      border-color: #6366F1;
+    }
+    .pricing-card h3 {
+      font-size: 16px;
+      color: #8B8B9E;
+      margin-bottom: 8px;
+    }
+    .pricing-card .price {
+      font-size: 36px;
+      font-weight: 800;
+    }
+    .pricing-card .period {
+      font-size: 14px;
+      color: #5C5C6F;
+    }
+    .pricing-card ul {
+      list-style: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .pricing-card li {
+      font-size: 14px;
+      color: #8B8B9E;
+      padding: 4px 0;
+    }
+    .pricing-card li::before {
+      content: '✓ ';
+      color: #10B981;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid #2A2A35;
+      color: #5C5C6F;
+      font-size: 13px;
+    }
+    footer a { color: #6366F1; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo">📊</div>
+    <h1>See which ventures actually make money.</h1>
+    <p class="tagline">
+      P&L per venture. True $/hour. Quarterly tax estimates.
+      AI-powered Kill/Scale recommendations. Built for the multi-hustle entrepreneur.
+    </p>
+    <a href="https://apps.apple.com/app/venturestack/idYOUR_APP_ID" class="cta">
+      Download on the App Store
+    </a>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-emoji">📈</div>
+      <div>
+        <h3>Venture-Level P&L</h3>
+        <p>Track revenue, expenses, and net profit for each business separately. No more guessing which hustle carries the team.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-emoji">⏱️</div>
+      <div>
+        <h3>True $/Hour</h3>
+        <p>Log time per venture and see your real hourly rate. Your flips might gross $2K/mo — but at 40 hours, that's $50/hr. Your SaaS at 2 hours is $250/hr.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-emoji">🧾</div>
+      <div>
+        <h3>Quarterly Tax Estimates</h3>
+        <p>Aggregates all income streams. Calculates SE tax + income tax for all 50 states. Tells you exactly what to set aside and when.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-emoji">🤖</div>
+      <div>
+        <h3>AI Kill/Scale Scorecard</h3>
+        <p>AI analyzes your ventures by profit margin, $/hour, and growth trend — then tells you where to double down or cut losses.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-emoji">📸</div>
+      <div>
+        <h3>Receipt Snap & Export</h3>
+        <p>Photograph receipts, tag to a venture. Export CSV for your accountant in one tap. Tax time made painless.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <h2>Simple pricing</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <div class="period">forever</div>
+        <ul>
+          <li>2 ventures</li>
+          <li>Full P&L dashboard</li>
+          <li>Time tracking</li>
+          <li>Receipt photos</li>
+        </ul>
+      </div>
+      <div class="pricing-card pro">
+        <h3>Pro</h3>
+        <div class="price" style="color:#6366F1">$5<span style="font-size:18px">/mo</span></div>
+        <div class="period">billed annually ($59.99/yr)</div>
+        <ul>
+          <li>Unlimited ventures</li>
+          <li>Tax center (all 50 states)</li>
+          <li>AI Kill/Scale scorecard</li>
+          <li>CSV export</li>
+          <li>Everything in Free</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      © 2026 VentureStack · 
+      <a href="/privacy">Privacy</a> · 
+      <a href="/terms">Terms</a> · 
+      <a href="mailto:support@venturestack.app">Support</a>
+    </p>
+  </footer>
+</body>
+</html>

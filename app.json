@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "VentureStack",
+    "slug": "venturestack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.venturestack",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "VentureStack needs camera access to scan receipts.",
+        "NSPhotoLibraryUsageDescription": "VentureStack needs photo access to attach receipt images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0F"
+      },
+      "package": "com.yourname.venturestack"
+    },
+    "plugins": [
+      "expo-apple-authentication",
+      "expo-image-picker",
+      "expo-notifications",
+      "expo-secure-store"
+    ]
+  }
+}
